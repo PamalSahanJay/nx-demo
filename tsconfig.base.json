@@ -15,6 +15,11 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@org/Button": ["packages/common-ui/src/index.ts"],
+      "@org/auth": ["libs/auth/src/index.ts"],
+      "@org/authentication": ["packages/authentication/src/index.ts"],
+      "@org/common-ui-comp": ["packages/common-ui-comp/src/index.ts"],
+      "@org/packages": ["auth/src/index.ts"],
       "@wiley/common-ui": ["common-ui/src/index.ts"]
     }
   },
