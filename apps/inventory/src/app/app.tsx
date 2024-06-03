@@ -8,14 +8,14 @@ import { BrowserRouter, Route, Routes } from "react-router-dom"
 import NxWelcome from './nx-welcome';
 
 const clickButtonHandler = () => {
-  console.log("button clicked and input = ", input)
+  // console.log("button clicked and input = ", input)
 }
 
 const SearchBarHandler = () => {
   console.log("search bar logic")
 }
 
-const [input, setInput] = useState("")
+// const [input, setInput] = useState("")
 
 export function App() {
   return (
@@ -25,7 +25,7 @@ export function App() {
           path="/atomic"
           element={
           <div>
-            <C_Input type="text" placeholder="type here" value="" onChange={(e) => setInput(e.target.value)}></C_Input>
+            <C_Input type="text" placeholder="type here" value="" onChange={(e) => console.log(e.target.value)}></C_Input>
             <C_Button onClick={clickButtonHandler} children={"click me"}></C_Button>
           </div>} 
         />
